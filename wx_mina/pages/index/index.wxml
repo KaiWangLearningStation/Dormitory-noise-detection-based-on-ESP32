@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<view>
+
+<!--亮度-->
+<van-cell-group>
+  <van-cell title="最新分贝值" value="{{voice}}" />
+</van-cell-group>
+
+<view class="m-container">
+  <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ line }}"></ec-canvas>
+</view>
+
+<view class="pic">
+  <van-row type="flex" justify="center">
+    <van-col span="90"><van-icon  size="90px" name="/image/emoji1.png" bind:click="onEmoji1Switch"/></van-col>
+    <van-col span="90"><van-icon  size="90px" name="/image/emoji2.png" bind:click="onEmoji2Switch"/></van-col>
+    <van-col span="90"><van-icon  size="90px" name="/image/emoji3.png" bind:click="onEmoji3Switch"/></van-col>
+    <van-col span="90"><van-icon  size="90px" name="/image/emoji4.png" bind:click="onEmoji4Switch"/></van-col>
+  </van-row>
+</view>
+
+</view>
